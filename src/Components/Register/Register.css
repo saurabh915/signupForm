@@ -1,0 +1,97 @@
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+
+    .fullName{
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+    .rightside{
+        margin-left: 10px;
+    }
+
+    .card{
+        position: absolute;
+        top: -364px;
+        height: 576px;
+        background-color: rgb(239 239 239);
+    }
+
+    .card-body{
+        height:  702px;
+    }
+
+    .btposition{
+        position: relative;
+    top: -20px;
+
+    }
+
+    .forms{
+        height: 805px;
+        background-color: #455b77d9;
+    }
+
+    .btn{
+        background: linear-gradient(to top, #1e9214d5,#329f28d5 60%, #7bff00);
+        color: white;
+    }
+
+    .l1{
+        width: 140px;
+        display: flex;
+        border: 1px solid black;
+        align-items: center;
+        top: 22px;
+        right: -6px;
+        position: relative;
+        justify-content: center;
+    }
+
+    
+    .l2{
+        width: 140px;
+        display: flex;
+        border: 1px solid black;
+        align-items: center;
+        left: 294px;
+        top: -62px;
+        position: relative;
+        justify-content: center;
+    }
+
+    .text-body2{
+        color: white;
+    }
+    p{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: left;
+    }
+
+    .lp{
+        color: white;
+        justify-content: center;
+        position: relative;
+        top: -11px;
+    }
