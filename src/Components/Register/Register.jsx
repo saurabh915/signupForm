@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+
+import { useState } from 'react';
 import './Register.css'
+import axios from 'axios';
 function Register() {
 
   const [formData, setFormData] = useState({
@@ -26,7 +28,7 @@ function Register() {
     });
   };
 
-  const validateForm = (event) => {
+  const validateForm = async(event) => {
    
     event.preventDefault();
     let hasError = false;
@@ -61,6 +63,24 @@ function Register() {
 
     setErrors(newErrors);
     if (!hasError) {
+      try {
+        await axios.post("http://localhost:8085/api/v1/employee/save", {
+        username: formData.fname,
+        email: formData.email,
+        password: formData.password,
+        });
+        alert("User Registation Successfully");
+      } catch (err) {
+        alert(err);
+      }
+
+
+
+
+
+
+
+
       console.log("Form submitted successfully");
       setFormData({
         fname: "",
@@ -137,8 +157,9 @@ function Register() {
 
               
               </form>
-  <p className="text-center lp  mt-5 mb-0 " style={{color:"white"}}> Already have an Account? <a href="#!"
-                    className="fw-bold text-body2"><u> Sign in</u></a></p>
+  <p className="text-center lp  mt-5 mb-0 " style={{color:"black"}}> Already have an Account? 
+  <a href="/login"
+                  style={{color:"black"}}  className="fb-bold text-body2"><u> Sign in</u></a></p>
 
             </div>
           </div>

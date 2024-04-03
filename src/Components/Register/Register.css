@@ -32,12 +32,12 @@
     .card{
         position: absolute;
         top: -364px;
-        height: 576px;
+        height: 616px;
         background-color: rgb(239 239 239);
     }
 
     .card-body{
-        height:  702px;
+        height:  725px;
     }
 
     .btposition{
